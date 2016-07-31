@@ -1,4 +1,4 @@
-# iOS Swift Core Data Assessment
+# iOS Swift Assessment: Core Data
 
 ## Instructions
 

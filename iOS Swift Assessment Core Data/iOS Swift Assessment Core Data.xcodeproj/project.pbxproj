@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1BFDA7621D4F83270060EEDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFDA7611D4F83270060EEDE /* AppDelegate.swift */; };
-		1BFDA7641D4F83270060EEDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFDA7631D4F83270060EEDE /* ViewController.swift */; };
 		1BFDA7671D4F83270060EEDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BFDA7651D4F83270060EEDE /* Main.storyboard */; };
 		1BFDA76A1D4F83270060EEDE /* iOS_Swift_Assessment_Core_Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BFDA7681D4F83270060EEDE /* iOS_Swift_Assessment_Core_Data.xcdatamodeld */; };
 		1BFDA76C1D4F83270060EEDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BFDA76B1D4F83270060EEDE /* Assets.xcassets */; };
@@ -19,7 +18,6 @@
 /* Begin PBXFileReference section */
 		1BFDA75E1D4F83270060EEDE /* iOS Swift Assessment Core Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Swift Assessment Core Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BFDA7611D4F83270060EEDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1BFDA7631D4F83270060EEDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1BFDA7661D4F83270060EEDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BFDA7691D4F83270060EEDE /* iOS_Swift_Assessment_Core_Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS_Swift_Assessment_Core_Data.xcdatamodel; sourceTree = "<group>"; };
 		1BFDA76B1D4F83270060EEDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,15 +57,22 @@
 			isa = PBXGroup;
 			children = (
 				1BFDA7611D4F83270060EEDE /* AppDelegate.swift */,
-				1BFDA7631D4F83270060EEDE /* ViewController.swift */,
+				1BFDA7761D4F834A0060EEDE /* DataStore.swift */,
+				1BFDA7681D4F83270060EEDE /* iOS_Swift_Assessment_Core_Data.xcdatamodeld */,
+				1BFDA7781D4F87680060EEDE /* Resources */,
+			);
+			path = "iOS Swift Assessment Core Data";
+			sourceTree = "<group>";
+		};
+		1BFDA7781D4F87680060EEDE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				1BFDA7651D4F83270060EEDE /* Main.storyboard */,
 				1BFDA76B1D4F83270060EEDE /* Assets.xcassets */,
 				1BFDA76D1D4F83270060EEDE /* LaunchScreen.storyboard */,
 				1BFDA7701D4F83270060EEDE /* Info.plist */,
-				1BFDA7681D4F83270060EEDE /* iOS_Swift_Assessment_Core_Data.xcdatamodeld */,
-				1BFDA7761D4F834A0060EEDE /* DataStore.swift */,
 			);
-			path = "iOS Swift Assessment Core Data";
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +146,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BFDA7641D4F83270060EEDE /* ViewController.swift in Sources */,
 				1BFDA7771D4F834A0060EEDE /* DataStore.swift in Sources */,
 				1BFDA7621D4F83270060EEDE /* AppDelegate.swift in Sources */,
 				1BFDA76A1D4F83270060EEDE /* iOS_Swift_Assessment_Core_Data.xcdatamodeld in Sources */,

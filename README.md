@@ -8,6 +8,6 @@
   * *The Swift Programming Language* by Apple Inc.
   * *Hacking with Swift* and *Pro Swift* by Paul Hudson
   * *Advanced Swift* by Chris Eidhof
-* Impement a `fetchData` function which is able to access the data store and fulfill the following step.
+* Impement in your `DataStore` a `fetchData` function which is able to access the data store and fulfill the following step.
 * In your `AppDelegate` file, retrieve and print to your console log the authors in your data store, along with the books they've written.
 * Bask in the glory of your Core Data-enabled app!

@@ -11,6 +11,10 @@ import CoreData
 
 struct DataStore {
     
+    static let store = DataStore()
+    
+    var authors = [Author]()
+    
     lazy var applicationDocumentsDirectory: NSURL = {
         // The directory the application uses to store the Core Data store file. This code uses a directory named "com.FlatironSchool.iOS_Swift_Assessment_Core_Data" in the application's documents Application Support directory.
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
@@ -70,5 +74,58 @@ struct DataStore {
                 abort()
             }
         }
+    }
+    
+    
+    mutating func fetchData() {
+        
+        // let bookRequest = NSFetchRequest(entityName: "Book")
+        let authorRequest = NSFetchRequest(entityName: "Author")
+        
+        do{
+            authors = try managedObjectContext.executeFetchRequest(authorRequest) as! [Author]
+        } catch let error as NSError {
+            print("error: \(error)")
+        }
+        
+        if authors.count == 0 {
+            generateTestData()
+        }
+        
+    }
+    
+    
+    mutating func generateTestData() {
+        
+        let book1 : Book = NSEntityDescription.insertNewObjectForEntityForName("Book", inManagedObjectContext: managedObjectContext) as! Book
+        book1.title = "The Swift Programming Language"
+        //        book1.author = appleAuthor
+        
+        let book2 : Book = NSEntityDescription.insertNewObjectForEntityForName("Book", inManagedObjectContext: managedObjectContext) as! Book
+        book2.title = "Hacking with Swift"
+        //        book2.author = author2
+        
+        let book3 : Book = NSEntityDescription.insertNewObjectForEntityForName("Book", inManagedObjectContext: managedObjectContext) as! Book
+        book3.title = "Pro Swift"
+        //        book3.author = author2
+        
+        let book4 : Book = NSEntityDescription.insertNewObjectForEntityForName("Book", inManagedObjectContext: managedObjectContext) as! Book
+        book4.title = "Advanced Swift"
+        //        book4.author = author3
+        
+        let appleAuthor : Author = NSEntityDescription.insertNewObjectForEntityForName("Author", inManagedObjectContext: managedObjectContext) as! Author
+        appleAuthor.name = "Apple Inc."
+        appleAuthor.books = [book1]
+        
+        let author2 : Author = NSEntityDescription.insertNewObjectForEntityForName("Author", inManagedObjectContext: managedObjectContext) as! Author
+        author2.name = "Paul Hudson"
+        author2.books = [book2, book3]
+        
+        let author3 : Author = NSEntityDescription.insertNewObjectForEntityForName("Author", inManagedObjectContext: managedObjectContext) as! Author
+        author3.name = "Chris Eidhof"
+        author3.books = [book4]
+        
+        saveContext()
+        fetchData()
     }
 }

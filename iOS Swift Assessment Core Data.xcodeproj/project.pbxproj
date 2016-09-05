@@ -13,6 +13,10 @@
 		1BFDA76C1D4F83270060EEDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BFDA76B1D4F83270060EEDE /* Assets.xcassets */; };
 		1BFDA76F1D4F83270060EEDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BFDA76D1D4F83270060EEDE /* LaunchScreen.storyboard */; };
 		1BFDA7771D4F834A0060EEDE /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFDA7761D4F834A0060EEDE /* DataStore.swift */; };
+		A41F56861D6B76DF006C6DA5 /* Author+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41F56821D6B76DF006C6DA5 /* Author+CoreDataProperties.swift */; };
+		A41F56871D6B76DF006C6DA5 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41F56831D6B76DF006C6DA5 /* Author.swift */; };
+		A41F56881D6B76DF006C6DA5 /* Book+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41F56841D6B76DF006C6DA5 /* Book+CoreDataProperties.swift */; };
+		A41F56891D6B76DF006C6DA5 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41F56851D6B76DF006C6DA5 /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		1BFDA76E1D4F83270060EEDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BFDA7701D4F83270060EEDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BFDA7761D4F834A0060EEDE /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		A41F56821D6B76DF006C6DA5 /* Author+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Author+CoreDataProperties.swift"; path = "../Author+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A41F56831D6B76DF006C6DA5 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Author.swift; path = ../Author.swift; sourceTree = "<group>"; };
+		A41F56841D6B76DF006C6DA5 /* Book+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Book+CoreDataProperties.swift"; path = "../Book+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A41F56851D6B76DF006C6DA5 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Book.swift; path = ../Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 		1BFDA7601D4F83270060EEDE /* iOS Swift Assessment Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				A41F56821D6B76DF006C6DA5 /* Author+CoreDataProperties.swift */,
+				A41F56831D6B76DF006C6DA5 /* Author.swift */,
+				A41F56841D6B76DF006C6DA5 /* Book+CoreDataProperties.swift */,
+				A41F56851D6B76DF006C6DA5 /* Book.swift */,
 				1BFDA7611D4F83270060EEDE /* AppDelegate.swift */,
 				1BFDA7761D4F834A0060EEDE /* DataStore.swift */,
 				1BFDA7681D4F83270060EEDE /* iOS_Swift_Assessment_Core_Data.xcdatamodeld */,
@@ -146,9 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41F56861D6B76DF006C6DA5 /* Author+CoreDataProperties.swift in Sources */,
 				1BFDA7771D4F834A0060EEDE /* DataStore.swift in Sources */,
+				A41F56891D6B76DF006C6DA5 /* Book.swift in Sources */,
+				A41F56881D6B76DF006C6DA5 /* Book+CoreDataProperties.swift in Sources */,
 				1BFDA7621D4F83270060EEDE /* AppDelegate.swift in Sources */,
 				1BFDA76A1D4F83270060EEDE /* iOS_Swift_Assessment_Core_Data.xcdatamodeld in Sources */,
+				A41F56871D6B76DF006C6DA5 /* Author.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +316,7 @@
 				1BFDA7751D4F83270060EEDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
